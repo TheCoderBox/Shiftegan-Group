@@ -158,6 +158,9 @@ textarea:focus {
 .mt-100 {
   margin-top: 100px;
 }
+.pt-100 {
+  padding-top: 100px;
+}
 .mx-auto {
   margin-inline: auto;
 }
@@ -221,7 +224,7 @@ header {
   display: inline-block;
 }
 .navigation-bar {
-  margin-block: 100px;
+  margin-block: 100px 0;
   border: 1px solid var(--blue);
   backdrop-filter: blur(16px);
   border-radius: 16px;
@@ -373,7 +376,7 @@ header {
   border-radius: 12px;
   font-size: 14px;
   width: 100%;
-  padding: 8px;
+  padding: 8px 16px;
 }
 .input:focus {
   border-color: var(--blue);
@@ -425,7 +428,9 @@ footer {
 .desktop-hide {
   display: none;
 }
-
+.overflow-hidden{
+  overflow-x: hidden;
+}
 /*******************Responsive************************/
 @media (max-width: 1200px) {
   .nav-item {

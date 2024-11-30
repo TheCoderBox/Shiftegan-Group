@@ -1,5 +1,5 @@
 // aos
-// AOS.init();
+AOS.init();
 
 
 // menu
@@ -8,7 +8,7 @@ try {
   const mobMenu = document.querySelector(".navigation");
   const overlay = document.querySelector(".overlay");
   const btnClose = document.querySelectorAll(".close-mob-menu");
-
+  
   openBtn.addEventListener("click", () => {
     mobMenu.classList.add("open");
     overlay.classList.add("active");
@@ -20,3 +20,15 @@ try {
     });
   });
 } catch (error) {}
+
+const tabItem = document.querySelectorAll(".tab-item");
+tabItem.forEach((btn) => {
+ 
+  btn.addEventListener("click", () => {
+    tabItem.forEach(item => {
+      item.classList.remove("active");
+    });
+    btn.classList.add("active");
+  });
+  
+});
